@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <ItemGroup>
+    <ProjectReference Include="..\..\..\R5T.F0016\source\R5T.F0016\R5T.F0016.csproj" />
     <ProjectReference Include="..\..\..\R5T.Magyar\source\R5T.Magyar\R5T.Magyar.csproj" />
     <ProjectReference Include="..\..\..\R5T.D0088\source\R5T.D0088.X001\R5T.D0088.X001.csproj" />
     <ProjectReference Include="..\..\..\R5T.D0088.I0002\source\R5T.D0088.I0002\R5T.D0088.I0002.csproj" />
@@ -16,11 +16,13 @@
     <ProjectReference Include="..\..\..\R5T.D0102\source\R5T.D0102.X001\R5T.D0102.X001.csproj" />
     <ProjectReference Include="..\..\..\R5T.D0104\source\R5T.D0104.X001\R5T.D0104.X001.csproj" />
     <ProjectReference Include="..\..\..\R5T.T0020\source\R5T.T0020\R5T.T0020.csproj" />
+    <ProjectReference Include="..\..\..\R5T.D0083\source\R5T.D0083.I001\R5T.D0083.I001.csproj" />
+    <ProjectReference Include="..\..\..\R5T.D0105\source\R5T.D0105.I001\R5T.D0105.I001.csproj" />
   </ItemGroup>
-
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>1573;1587;1591</NoWarn>
   </PropertyGroup>
-
 </Project>

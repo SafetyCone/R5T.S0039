@@ -16,7 +16,6 @@ namespace R5T.S0039
         
         static async Task Main()
         {
-        
             //OverridableProcessStartTimeProvider.Override("20211214 - 163052");
             //OverridableProcessStartTimeProvider.DoNotOverride();
         
@@ -31,30 +30,28 @@ namespace R5T.S0039
 
         #endregion
 
-
         
         public Program(IServiceProvider serviceProvider)
             : base(serviceProvider)
         {
         }
 
-
         protected override Task ServiceMain(CancellationToken stoppingToken)
         {
-        
             return this.RunOperation();
         }
 
+#pragma warning disable CA1822 // Mark members as static
+#pragma warning disable IDE0051 // Remove unused private members
 
         private async Task RunOperation()
         {
-        
+            await this.ServiceProvider.Run<O000_Main>();
         }
 
-
-        private async Task RunMethod()
+        private Task RunMethod()
         {
-        
+            return Task.CompletedTask;
         }
     }
 }
